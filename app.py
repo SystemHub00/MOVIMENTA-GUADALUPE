@@ -32,131 +32,208 @@ VALID_DDDS = {
 # 1. LOCAIS
 # =============================================================================
 LOCAL_OPTIONS = [
-    {"id": "1", "nome": "COMUNIDADE EVANGÉLICA CHAMA DO AMOR - CAMPO GRANDE"},
+    {"id": "1", "nome": "POLO GUADALUPE — SALA 1"},
+    {"id": "2", "nome": "POLO GUADALUPE — SALA 2"},
+    {"id": "3", "nome": "POLO GUADALUPE — SALA 3"},
 ]
 
 # =============================================================================
 # 2. CATÁLOGO DE CURSOS
 # =============================================================================
 COURSE_CATALOG = [
-    {"id": "1", "nome": "CAMAREIRO"},
-    {"id": "2", "nome": "AGENTE DE TURISMO CORPORATIVO"},
-    {"id": "3", "nome": "ORIENTADOR DE HOTELARIA"},
-    {"id": "4", "nome": "MONITOR DE LAZER E RECREAÇÃO"},
+    {"id": "1",  "nome": "INTELIGÊNCIA ARTIFICIAL"},
+    {"id": "2",  "nome": "ASSISTENTE DE LOGÍSTICA"},
+    {"id": "3",  "nome": "MARKETING DIGITAL"},
+    {"id": "4",  "nome": "CAMAREIRO"},
+    {"id": "5",  "nome": "AUXILIAR DE COZINHA"},
+    {"id": "6",  "nome": "RECEPCIONISTA"},
+    {"id": "7",  "nome": "SOCIAL MEDIA"},
+    {"id": "8",  "nome": "AGENTE DE TURISMO"},
+    {"id": "9",  "nome": "AGENTE DE TURISMO CORPORATIVO"},
+    {"id": "10", "nome": "TRÁFEGO PAGO"},
+    {"id": "11", "nome": "UX/UI DESIGNER"},
+    {"id": "12", "nome": "ORIENTADOR DE HOTELARIA"},
+    {"id": "13", "nome": "MONITOR DE LAZER E RECREAÇÃO"},
+    {"id": "14", "nome": "GESTOR DE RESÍDUOS SÓLIDOS"},
+    {"id": "15", "nome": "GOVERNANÇA ESG"},
+    {"id": "16", "nome": "ECO TURISMO E GESTÃO DE UNIDADES"},
+    {"id": "17", "nome": "AGENTE DE DEFESA AMBIENTAL"},
+    {"id": "18", "nome": "OPERADOR DE SISTEMA DE COMPOSTAGEM E RESÍDUOS ORGÂNICOS"},
 ]
 
 # =============================================================================
-# 3. HORÁRIOS (AGENDAS)
-# =============================================================================
-SCHEDULE_OPTIONS = {
-    "1": {"dias_aula": "Segunda e Quarta", "horario": "9h às 11h"},
-    "2": {"dias_aula": "Segunda e Quarta", "horario": "13h às 15h"},
-    "3": {"dias_aula": "Segunda e Quarta", "horario": "16h às 18h"},
-    "4": {"dias_aula": "Terça e Quinta",   "horario": "09h às 11h"},
-    "5": {"dias_aula": "Terça e Quinta",   "horario": "13h às 15h"},
-    "6": {"dias_aula": "Terça e Quinta",   "horario": "16h às 18h"},
-    "7": {"dias_aula": "Terça e Quinta",   "horario": "19h às 21h"},
-}
-
-# =============================================================================
-# 4. DATAS DE INÍCIO
-# =============================================================================
-START_DATE_OPTIONS = {
-    "1": "15/06/2026",
-    "2": "16/06/2026",
-}
-
-# =============================================================================
-# 5. DATAS DE ENCERRAMENTO
-# =============================================================================
-END_DATE_OPTIONS = {
-    "1": "08/07/2026",
-    "2": "09/07/2026",
-    "3": "16/06/2026",
-}
-
-# =============================================================================
-# 6. ENDEREÇOS
+# 3. ENDEREÇO (único para todos)
 # =============================================================================
 ADDRESS_OPTIONS = {
-    "1": "📍Estrada dos Cablocos, n°257 - Bairro: Campo Grande/RJ - Cep: 23.040-160",
+    "1": "📍Rua Joaquim Sarmento, 183 - Guadalupe",
 }
 
 # =============================================================================
-# 7. TURMAS
+# 4. TURMAS (1 turma por curso — select de turma nunca aparece)
 # =============================================================================
 TURMA_OPTIONS = [
-    # ── CAMAREIRO — 3 turmas ────────────────────────────────────────────────
+    # ── Seg/Qua 10h-12h — início 29/06 ─────────────────────────────────────
     {
-        "id": "1", "curso_id": "1", "local_id": "1",
-        "turma_codigo": "CAM-CG-01",
-        "turma_label": "Seg/Qua — 9h às 11h (início 15/06)",
-        "agenda_id": "1", "periodo_id": "1", "encerramento_id": "1", "endereco_id": "1",
+        "id": "1",  "curso_id": "1",  "local_id": "1",
+        "turma_codigo": "IA-GUA-01",
+        "turma_label": "Seg/Qua — 10h às 12h (início 29/06) — Sala 1",
+        "dias_aula": "Segunda e Quarta", "horario": "10h às 12h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
     {
-        "id": "2", "curso_id": "1", "local_id": "1",
-        "turma_codigo": "CAM-CG-02",
-        "turma_label": "Ter/Qui — 09h às 11h (início 16/06)",
-        "agenda_id": "4", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "1",
+        "id": "2",  "curso_id": "2",  "local_id": "2",
+        "turma_codigo": "ALG-GUA-01",
+        "turma_label": "Seg/Qua — 10h às 12h (início 29/06) — Sala 2",
+        "dias_aula": "Segunda e Quarta", "horario": "10h às 12h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
     {
-        "id": "8", "curso_id": "1", "local_id": "1",
-        "turma_codigo": "26/CMAR 23",
-        "turma_label": "Ter/Qui — 19h às 21h (início 16/06)",
-        "agenda_id": "7", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "1",
+        "id": "3",  "curso_id": "3",  "local_id": "3",
+        "turma_codigo": "MKD-GUA-01",
+        "turma_label": "Seg/Qua — 10h às 12h (início 29/06) — Sala 3",
+        "dias_aula": "Segunda e Quarta", "horario": "10h às 12h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
-    # ── AGENTE DE TURISMO CORPORATIVO — 2 turmas ────────────────────────────
+    # ── Seg/Qua 13h-15h — início 29/06 ─────────────────────────────────────
     {
-        "id": "3", "curso_id": "2", "local_id": "1",
-        "turma_codigo": "ATC-CG-01",
-        "turma_label": "Seg/Qua — 13h às 15h (início 15/06)",
-        "agenda_id": "2", "periodo_id": "1", "encerramento_id": "1", "endereco_id": "1",
-    },
-    {
-        "id": "4", "curso_id": "2", "local_id": "1",
-        "turma_codigo": "ATC-CG-02",
-        "turma_label": "Ter/Qui — 16h às 18h (início 16/06)",
-        "agenda_id": "6", "periodo_id": "2", "encerramento_id": "3", "endereco_id": "1",
-    },
-    # ── ORIENTADOR DE HOTELARIA — 2 turmas ──────────────────────────────────
-    {
-        "id": "5", "curso_id": "3", "local_id": "1",
-        "turma_codigo": "OH-CG-01",
-        "turma_label": "Seg/Qua — 16h às 18h (início 15/06)",
-        "agenda_id": "3", "periodo_id": "1", "encerramento_id": "1", "endereco_id": "1",
+        "id": "4",  "curso_id": "4",  "local_id": "1",
+        "turma_codigo": "CAM-GUA-01",
+        "turma_label": "Seg/Qua — 13h às 15h (início 29/06) — Sala 1",
+        "dias_aula": "Segunda e Quarta", "horario": "13h às 15h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
     {
-        "id": "6", "curso_id": "3", "local_id": "1",
-        "turma_codigo": "OH-CG-02",
-        "turma_label": "Ter/Qui — 13h às 15h (início 16/06)",
-        "agenda_id": "5", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "1",
-    },
-    # ── MONITOR DE LAZER E RECREAÇÃO — 2 turmas ─────────────────────────────
-    {
-        "id": "7", "curso_id": "4", "local_id": "1",
-        "turma_codigo": "MLR-CG-01",
-        "turma_label": "Ter/Qui — 19h às 21h (início 16/06)",
-        "agenda_id": "7", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "1",
+        "id": "5",  "curso_id": "5",  "local_id": "2",
+        "turma_codigo": "ACZ-GUA-01",
+        "turma_label": "Seg/Qua — 13h às 15h (início 29/06) — Sala 2",
+        "dias_aula": "Segunda e Quarta", "horario": "13h às 15h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
     {
-        "id": "9", "curso_id": "4", "local_id": "1",
-        "turma_codigo": "26/MLRE 26",
-        "turma_label": "Ter/Qui — 13h às 15h (início 16/06)",
-        "agenda_id": "5", "periodo_id": "2", "encerramento_id": "2", "endereco_id": "1",
+        "id": "6",  "curso_id": "6",  "local_id": "3",
+        "turma_codigo": "RCP-GUA-01",
+        "turma_label": "Seg/Qua — 13h às 15h (início 29/06) — Sala 3",
+        "dias_aula": "Segunda e Quarta", "horario": "13h às 15h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    # ── Seg/Qua 16h-18h — início 29/06 ─────────────────────────────────────
+    {
+        "id": "7",  "curso_id": "7",  "local_id": "1",
+        "turma_codigo": "SMD-GUA-01",
+        "turma_label": "Seg/Qua — 16h às 18h (início 29/06) — Sala 1",
+        "dias_aula": "Segunda e Quarta", "horario": "16h às 18h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "8",  "curso_id": "8",  "local_id": "2",
+        "turma_codigo": "ATU-GUA-01",
+        "turma_label": "Seg/Qua — 16h às 18h (início 29/06) — Sala 2",
+        "dias_aula": "Segunda e Quarta", "horario": "16h às 18h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "9",  "curso_id": "9",  "local_id": "3",
+        "turma_codigo": "ATC-GUA-01",
+        "turma_label": "Seg/Qua — 16h às 18h (início 29/06) — Sala 3",
+        "dias_aula": "Segunda e Quarta", "horario": "16h às 18h",
+        "data_inicio": "29/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    # ── Ter/Qui 10h-12h — início 30/06 ─────────────────────────────────────
+    {
+        "id": "10", "curso_id": "10", "local_id": "1",
+        "turma_codigo": "GTP-GUA-01",
+        "turma_label": "Ter/Qui — 10h às 12h (início 30/06) — Sala 1",
+        "dias_aula": "Terça e Quinta", "horario": "10h às 12h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "11", "curso_id": "11", "local_id": "2",
+        "turma_codigo": "UXI-GUA-01",
+        "turma_label": "Ter/Qui — 10h às 12h (início 30/06) — Sala 2",
+        "dias_aula": "Terça e Quinta", "horario": "10h às 12h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "12", "curso_id": "12", "local_id": "3",
+        "turma_codigo": "OHO-GUA-01",
+        "turma_label": "Ter/Qui — 10h às 12h (início 30/06) — Sala 3",
+        "dias_aula": "Terça e Quinta", "horario": "10h às 12h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    # ── Ter/Qui 13h-15h — início 30/06 ─────────────────────────────────────
+    {
+        "id": "13", "curso_id": "13", "local_id": "1",
+        "turma_codigo": "MLR-GUA-01",
+        "turma_label": "Ter/Qui — 13h às 15h (início 30/06) — Sala 1",
+        "dias_aula": "Terça e Quinta", "horario": "13h às 15h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "14", "curso_id": "14", "local_id": "2",
+        "turma_codigo": "GRS-GUA-01",
+        "turma_label": "Ter/Qui — 13h às 15h (início 30/06) — Sala 2",
+        "dias_aula": "Terça e Quinta", "horario": "13h às 15h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "15", "curso_id": "15", "local_id": "3",
+        "turma_codigo": "ESG-GUA-01",
+        "turma_label": "Ter/Qui — 13h às 15h (início 30/06) — Sala 3",
+        "dias_aula": "Terça e Quinta", "horario": "13h às 15h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    # ── Ter/Qui 16h-18h — início 30/06 ─────────────────────────────────────
+    {
+        "id": "16", "curso_id": "16", "local_id": "1",
+        "turma_codigo": "ECO-GUA-01",
+        "turma_label": "Ter/Qui — 16h às 18h (início 30/06) — Sala 1",
+        "dias_aula": "Terça e Quinta", "horario": "16h às 18h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "17", "curso_id": "17", "local_id": "2",
+        "turma_codigo": "ADA-GUA-01",
+        "turma_label": "Ter/Qui — 16h às 18h (início 30/06) — Sala 2",
+        "dias_aula": "Terça e Quinta", "horario": "16h às 18h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
+    },
+    {
+        "id": "18", "curso_id": "18", "local_id": "3",
+        "turma_codigo": "OSC-GUA-01",
+        "turma_label": "Ter/Qui — 16h às 18h (início 30/06) — Sala 3",
+        "dias_aula": "Terça e Quinta", "horario": "16h às 18h",
+        "data_inicio": "30/06/2026", "encerramento": "31/07/2026",
+        "endereco_id": "1",
     },
 ]
 
 # =============================================================================
-# 8. FUNÇÕES AUXILIARES
+# 5. FUNÇÕES AUXILIARES
 # =============================================================================
 def build_course_options():
     local_by_id  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
     course_by_id = {opt["id"]: opt for opt in COURSE_CATALOG}
     options = []
     for t in TURMA_OPTIONS:
-        local    = local_by_id[t["local_id"]]
-        course   = course_by_id[t["curso_id"]]
-        schedule = SCHEDULE_OPTIONS[t["agenda_id"]]
+        local  = local_by_id[t["local_id"]]
+        course = course_by_id[t["curso_id"]]
         options.append({
             "id":             t["id"],
             "curso_id":       t["curso_id"],
@@ -165,10 +242,10 @@ def build_course_options():
             "local":          local["nome"],
             "curso":          course["nome"],
             "turma":          f"{t['turma_codigo']} - {course['nome']}",
-            "dias_aula":      schedule["dias_aula"],
-            "horario":        schedule["horario"],
-            "data_inicio":    START_DATE_OPTIONS[t["periodo_id"]],
-            "encerramento":   END_DATE_OPTIONS[t["encerramento_id"]],
+            "dias_aula":      t["dias_aula"],
+            "horario":        t["horario"],
+            "data_inicio":    t["data_inicio"],
+            "encerramento":   t["encerramento"],
             "endereco_curso": ADDRESS_OPTIONS[t["endereco_id"]],
         })
     return options
@@ -178,6 +255,7 @@ COURSE_OPTIONS_BY_ID = {opt["id"]: opt for opt in COURSE_OPTIONS}
 COURSE_CATALOG_BY_ID = {opt["id"]: opt for opt in COURSE_CATALOG}
 LOCAL_OPTIONS_BY_ID  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
 COURSE_INFO          = COURSE_OPTIONS[0] if COURSE_OPTIONS else None
+
 
 def build_whatsapp_share_url(home_url):
     message = (
@@ -223,13 +301,23 @@ def fill_form_data_from_selection(form_data):
             fill_form_data_from_option(form_data, matched)
             return
 
+    # fallback: match by curso_id (1 turma por curso)
+    if curso_id:
+        matched = next(
+            (o for o in COURSE_OPTIONS if o["curso_id"] == str(curso_id)),
+            None,
+        )
+        if matched:
+            fill_form_data_from_option(form_data, matched)
+            return
+
     for key in ("local", "curso", "turma", "dias_aula", "horario",
                 "data_inicio", "encerramento", "endereco_curso", "opcao_id"):
         form_data.setdefault(key, "")
 
 
 # =============================================================================
-# 9. TEMPLATES
+# 6. TEMPLATES
 # =============================================================================
 TEMPLATE_WIZARD = r'''
 <!DOCTYPE html>
@@ -237,7 +325,7 @@ TEMPLATE_WIZARD = r'''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>MOVIMENTA RIO</title>
+    <title>MOVIMENTA RIO — GUADALUPE</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/assistant.css">
     <link href="https://fonts.googleapis.com/css2?family=Wise:wght@400;700;900&display=swap" rel="stylesheet">
@@ -255,12 +343,12 @@ TEMPLATE_WIZARD = r'''
     </script>
     <style>
         :root {
-            --cor-principal: #1155cc;
-            --cor-principal-escura: #0d47a1;
-            --cor-clara: #eef4ff;
-            --cor-texto: #17386d;
-            --cor-borda: #a8c0f4;
-            --sombra-card: 0 18px 55px rgba(17, 85, 204, 0.18);
+            --cor-principal:        #0f766e;
+            --cor-principal-escura: #0d5e57;
+            --cor-clara:            #f0fdfa;
+            --cor-texto:            #134e4a;
+            --cor-borda:            #99d6cf;
+            --sombra-card:          0 18px 55px rgba(15,118,110,0.18);
         }
 
         * { box-sizing: border-box; }
@@ -269,16 +357,16 @@ TEMPLATE_WIZARD = r'''
         body {
             min-height: 100vh;
             background:
-                radial-gradient(circle at top left, rgba(17, 85, 204, 0.14), transparent 34%),
-                radial-gradient(circle at top right, rgba(211, 226, 255, 0.82), transparent 32%),
-                linear-gradient(135deg, #f5f9ff 0%, #fff 42%, #dfeaff 100%);
+                radial-gradient(circle at top left, rgba(15,118,110,0.14), transparent 34%),
+                radial-gradient(circle at top right, rgba(153,214,207,0.82), transparent 32%),
+                linear-gradient(135deg, #f0fdfa 0%, #fff 42%, #ccfbf1 100%);
             color: var(--cor-texto);
             font-family: 'Wise', Arial, sans-serif;
         }
 
         .main-header {
             border-bottom: 4px solid var(--cor-principal);
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255,255,255,0.92);
             backdrop-filter: blur(8px);
         }
 
@@ -293,18 +381,18 @@ TEMPLATE_WIZARD = r'''
             margin: 18px auto 22px;
             padding: 18px 18px 20px;
             border-radius: 28px;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 12px 30px rgba(17, 85, 204, 0.12);
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 12px 30px rgba(15,118,110,0.12);
         }
 
         .wizard-track {
             width: 100%; height: 14px;
-            background: #dbe6fb; border-radius: 999px; overflow: hidden;
+            background: #ccfbf1; border-radius: 999px; overflow: hidden;
         }
 
         .wizard-fill {
             height: 100%; width: 25%;
-            background: linear-gradient(90deg, #1155cc 0%, #4f86ea 100%);
+            background: linear-gradient(90deg, #0f766e 0%, #2dd4bf 100%);
             border-radius: 999px;
             transition: width 0.3s ease;
         }
@@ -317,8 +405,8 @@ TEMPLATE_WIZARD = r'''
 
         .wizard-label {
             padding: 12px 10px;
-            border: 1px solid #c9daf8; border-radius: 18px;
-            background: #fff; color: #2f5fb4;
+            border: 1px solid #99d6cf; border-radius: 18px;
+            background: #fff; color: #0d5e57;
             font-size: 0.92rem; font-weight: 700;
             text-align: center;
             transition: all 0.25s ease;
@@ -331,8 +419,8 @@ TEMPLATE_WIZARD = r'''
         }
 
         .wizard-shell {
-            background: rgba(255, 255, 255, 0.88);
-            border: 1px solid rgba(255, 255, 255, 0.9);
+            background: rgba(255,255,255,0.88);
+            border: 1px solid rgba(255,255,255,0.9);
             border-radius: 34px;
             box-shadow: var(--sombra-card);
             overflow: hidden;
@@ -347,14 +435,14 @@ TEMPLATE_WIZARD = r'''
         }
 
         .hero-grid {
-            display: grid; grid-template-columns: minmax(0, 1fr);
+            display: grid; grid-template-columns: minmax(0,1fr);
             gap: 14px; align-items: center; justify-items: center;
         }
 
         .hero-card {
             padding: 32px; border-radius: 30px;
-            background: linear-gradient(135deg, #fff 0%, #f5f9ff 58%, #dfeaff 100%);
-            border: 1px solid #c9daf8; width: 100%; text-align: center;
+            background: linear-gradient(135deg, #fff 0%, #f0fdfa 58%, #ccfbf1 100%);
+            border: 1px solid #99d6cf; width: 100%; text-align: center;
         }
 
         .hero-pill {
@@ -374,7 +462,7 @@ TEMPLATE_WIZARD = r'''
         .panel-title { font-size: clamp(1.7rem, 3vw, 2.4rem); }
 
         .hero-subtitle, .panel-subtitle {
-            margin: 0; color: #2f5fb4;
+            margin: 0; color: #0d5e57;
             font-size: 1.05rem; line-height: 1.55;
         }
 
@@ -382,13 +470,13 @@ TEMPLATE_WIZARD = r'''
 
         .hero-highlight, .info-card, .review-box, .step-card {
             border-radius: 22px;
-            border: 1px solid #d7e3fb;
+            border: 1px solid #a7f3d0;
             background: #fff;
-            box-shadow: 0 8px 24px rgba(17, 85, 204, 0.08);
+            box-shadow: 0 8px 24px rgba(15,118,110,0.08);
         }
 
         .hero-highlight {
-            padding: 12px 14px; color: #2f5fb4;
+            padding: 12px 14px; color: #0d5e57;
             font-size: 0.95rem; font-weight: 700;
         }
 
@@ -426,7 +514,7 @@ TEMPLATE_WIZARD = r'''
         .benefits-nav {
             min-width: 44px; min-height: 44px; border: none; border-radius: 999px;
             background: #fff; color: var(--cor-principal);
-            box-shadow: 0 6px 16px rgba(17, 85, 204, 0.14);
+            box-shadow: 0 6px 16px rgba(15,118,110,0.14);
             font: inherit; font-size: 1.1rem; font-weight: 900; cursor: pointer;
         }
 
@@ -435,7 +523,7 @@ TEMPLATE_WIZARD = r'''
         }
 
         .benefits-dot {
-            width: 9px; height: 9px; border-radius: 999px; background: #b7cbf4;
+            width: 9px; height: 9px; border-radius: 999px; background: #99d6cf;
             transition: transform 0.2s ease, background 0.2s ease;
         }
 
@@ -451,7 +539,7 @@ TEMPLATE_WIZARD = r'''
         }
 
         .step-grid.step-grid--stacked {
-            grid-template-columns: minmax(0, 1fr);
+            grid-template-columns: minmax(0,1fr);
             max-width: 540px; margin-left: auto; margin-right: auto;
         }
 
@@ -471,22 +559,6 @@ TEMPLATE_WIZARD = r'''
         .wizard-panel[data-step="escolher"] .form-group.full { width: 100%; max-width: 100%; }
 
         .wizard-panel[data-step="escolher"] .input-with-action { width: 100%; max-width: 100%; }
-
-        .wizard-panel[data-step="escolher"] #local_display,
-        .wizard-panel[data-step="escolher"] #dias_aula,
-        .wizard-panel[data-step="escolher"] #horario,
-        .wizard-panel[data-step="escolher"] #data_inicio,
-        .wizard-panel[data-step="escolher"] #encerramento,
-        .wizard-panel[data-step="escolher"] #endereco_curso {
-            width: 100% !important; min-width: 0 !important;
-            max-width: 100% !important; margin: 0 !important;
-        }
-
-        select:disabled {
-            background-color: #e8f0e8;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
 
         .form-group {
             display: flex; flex-direction: column; gap: 4px;
@@ -510,14 +582,14 @@ TEMPLATE_WIZARD = r'''
             min-height: 38px; height: 38px;
             padding: 7px 10px;
             border: 1.2px solid var(--cor-borda); border-radius: 10px;
-            background: #f5f9ff; color: var(--cor-texto);
+            background: #f0fdfa; color: var(--cor-texto);
             font: inherit; line-height: 1.2; text-align: left; outline: none;
             transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
 
         .form-group select {
             appearance: none; -webkit-appearance: none; -moz-appearance: none;
-            background-image: url('data:image/svg+xml;utf8,<svg fill="%231155cc" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%230f766e" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
             background-repeat: no-repeat;
             background-position: right 14px center;
             background-size: 20px 20px;
@@ -531,17 +603,17 @@ TEMPLATE_WIZARD = r'''
         .form-group textarea:focus {
             border-color: var(--cor-principal);
             background: #fff;
-            box-shadow: 0 0 0 4px rgba(17, 85, 204, 0.12);
+            box-shadow: 0 0 0 4px rgba(15,118,110,0.12);
         }
 
         .readonly-field {
-            background: #eef4ff !important;
-            color: #2f5fb4 !important;
+            background: #f0fdfa !important;
+            color: #0d5e57 !important;
             font-weight: 700;
         }
 
         .input-with-action {
-            display: grid; grid-template-columns: minmax(0, 1fr);
+            display: grid; grid-template-columns: minmax(0,1fr);
             gap: 10px; align-items: stretch; justify-content: stretch;
         }
 
@@ -557,7 +629,7 @@ TEMPLATE_WIZARD = r'''
         .icon-button {
             min-width: 56px; min-height: 52px;
             background: var(--cor-principal); color: #fff;
-            box-shadow: 0 8px 16px rgba(17, 85, 204, 0.22);
+            box-shadow: 0 8px 16px rgba(15,118,110,0.22);
         }
 
         .wizard-panel[data-step="escolher"] .icon-button {
@@ -576,8 +648,8 @@ TEMPLATE_WIZARD = r'''
         }
 
         .cta-button, .submit-button {
-            background: linear-gradient(90deg, #1155cc 0%, #4f86ea 100%);
-            color: #fff; box-shadow: 0 10px 24px rgba(17, 85, 204, 0.24);
+            background: linear-gradient(90deg, #0f766e 0%, #2dd4bf 100%);
+            color: #fff; box-shadow: 0 10px 24px rgba(15,118,110,0.24);
         }
 
         .secondary-button {
@@ -605,7 +677,7 @@ TEMPLATE_WIZARD = r'''
         .balao-erro {
             margin-top: 4px; padding: 10px 14px;
             border-radius: 14px;
-            border: 1px solid #0d47a1; background: #1155cc;
+            border: 1px solid #0d5e57; background: #0f766e;
             color: #fff; font-size: 0.92rem;
             font-weight: 700; line-height: 1.35;
         }
@@ -613,8 +685,8 @@ TEMPLATE_WIZARD = r'''
         .balao-erro[hidden] { display: none; }
 
         .erro-campo {
-            border-color: #1155cc !important;
-            box-shadow: 0 0 0 4px rgba(17, 85, 204, 0.12) !important;
+            border-color: #0f766e !important;
+            box-shadow: 0 0 0 4px rgba(15,118,110,0.12) !important;
         }
 
         .review-layout {
@@ -626,9 +698,7 @@ TEMPLATE_WIZARD = r'''
         .review-box { padding: 10px; text-align: center; }
         .review-box.full { grid-column: 1 / -1; }
 
-        .review-list {
-            display: grid; gap: 6px; margin-top: 8px; text-align: left;
-        }
+        .review-list { display: grid; gap: 6px; margin-top: 8px; text-align: left; }
 
         .review-item {
             display: grid; grid-template-columns: auto 1fr;
@@ -653,7 +723,7 @@ TEMPLATE_WIZARD = r'''
             display: flex; gap: 12px;
             align-items: flex-start; justify-content: flex-start;
             padding: 10px 12px; border-radius: 14px;
-            background: var(--cor-clara); color: #6e3d37;
+            background: var(--cor-clara); color: #134e4a;
             line-height: 1.45; text-align: left;
         }
 
@@ -676,70 +746,41 @@ TEMPLATE_WIZARD = r'''
 
         @media (max-width: 860px) {
             .hero-grid, .review-layout { grid-template-columns: 1fr; }
-            .step-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 8px 8px;
-            }
-            .step-grid.step-grid--stacked {
-                grid-template-columns: minmax(0, 1fr); max-width: 540px;
-            }
+            .step-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
+            .step-grid.step-grid--stacked { grid-template-columns: minmax(0,1fr); max-width: 540px; }
         }
 
         @media (max-width: 640px) {
-            html, body {
-                width: 100% !important; max-width: 100% !important;
-                overflow-x: hidden !important;
-            }
+            html, body { width:100%!important; max-width:100%!important; overflow-x:hidden!important; }
             body * { min-width: 0; }
             body { overflow-x: hidden; }
             .main-header { padding: 10px 12px; }
-            .header-logos { display: flex; flex-direction: column; align-items: center; gap: 10px; }
-            .header-logos img, .logo, .logo-prefeitura-topo {
-                max-width: min(88vw, 280px); height: auto;
-            }
-            .wizard-page {
-                width: calc(100% - 8px) !important;
-                max-width: 100% !important; padding: 4px 0 10px;
-            }
-            .wizard-progress, .wizard-panel {
-                width: 100% !important; max-width: 100% !important; padding: 8px;
-            }
-            .wizard-labels { grid-template-columns: 1fr; gap: 6px; }
-            .hero-card, .step-card, .review-box {
-                width: 100% !important; max-width: 100% !important; padding: 8px;
-            }
-            .input-with-action {
-                grid-template-columns: minmax(0, 1fr);
-                width: 100% !important; max-width: 100% !important;
-            }
-            .panel-actions > * { width: 100%; }
-            .step-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 6px;
-            }
-            .step-grid.step-grid--stacked {
-                grid-template-columns: minmax(0, 1fr); max-width: 100%;
-            }
-            .review-layout { grid-template-columns: 1fr; max-width: 100%; gap: 10px; }
+            .header-logos { display:flex; flex-direction:column; align-items:center; gap:10px; }
+            .header-logos img, .logo, .logo-prefeitura-topo { max-width:min(88vw,280px); height:auto; }
+            .wizard-page { width:calc(100% - 8px)!important; max-width:100%!important; padding:4px 0 10px; }
+            .wizard-progress, .wizard-panel { width:100%!important; max-width:100%!important; padding:8px; }
+            .wizard-labels { grid-template-columns:1fr; gap:6px; }
+            .hero-card, .step-card, .review-box { width:100%!important; max-width:100%!important; padding:8px; }
+            .input-with-action { grid-template-columns:minmax(0,1fr); width:100%!important; max-width:100%!important; }
+            .panel-actions > * { width:100%; }
+            .step-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+            .step-grid.step-grid--stacked { grid-template-columns:minmax(0,1fr); max-width:100%; }
+            .review-layout { grid-template-columns:1fr; max-width:100%; gap:10px; }
             .review-item, .form-group, .form-group input, .form-group select,
             .form-group textarea, .wizard-shell, .panel-actions,
-            .review-check, .balao-erro {
-                width: 100% !important; max-width: 100% !important;
-            }
-            .form-group label, .review-title,
-            .review-item span, .review-check { word-break: break-word; }
-            img, svg { max-width: 100% !important; height: auto !important; }
+            .review-check, .balao-erro { width:100%!important; max-width:100%!important; }
+            .form-group label, .review-title, .review-item span, .review-check { word-break:break-word; }
+            img, svg { max-width:100%!important; height:auto!important; }
             .form-group input, .form-group select,
-            .form-group textarea, .icon-button {
-                min-height: 32px; height: 32px; font-size: 0.98em;
-            }
-            .form-group textarea { min-height: 60px; height: auto; }
-            .review-check { flex-direction: row; align-items: flex-start; padding: 8px; }
-            .review-check input { width: 22px; min-width: 22px; height: 22px; flex-basis: 22px; }
-            .review-check ul { padding-left: 2px; }
-            .hero-title, .panel-title { font-size: 1.3rem; }
-            .hero-subtitle, .panel-subtitle { font-size: 0.92rem; }
-            .wizard-shell { border-radius: 16px; }
-            .form-group.full { grid-column: auto; }
+            .form-group textarea, .icon-button { min-height:32px; height:32px; font-size:0.98em; }
+            .form-group textarea { min-height:60px; height:auto; }
+            .review-check { flex-direction:row; align-items:flex-start; padding:8px; }
+            .review-check input { width:22px; min-width:22px; height:22px; flex-basis:22px; }
+            .review-check ul { padding-left:2px; }
+            .hero-title, .panel-title { font-size:1.3rem; }
+            .hero-subtitle, .panel-subtitle { font-size:0.92rem; }
+            .wizard-shell { border-radius:16px; }
+            .form-group.full { grid-column:auto; }
         }
     </style>
 </head>
@@ -775,17 +816,31 @@ TEMPLATE_WIZARD = r'''
                     <div class="hero-grid">
                         <div class="hero-card">
                             <span class="hero-pill">PROJETO: MOVIMENTA RIO</span>
-                            <h1 class="hero-title">CURSOS GRATUITOS EM CAMPO GRANDE</h1>
+                            <h1 class="hero-title">CURSOS GRATUITOS EM GUADALUPE</h1>
                             <p class="hero-subtitle">
                                 Programa Movimenta Rio — Prefeitura do Rio de Janeiro. Garanta sua vaga e transforme sua carreira!
                             </p>
                             <div class="hero-highlights">
                                 <div class="hero-highlight" style="text-align:center;">
                                     <strong>CURSOS DISPONÍVEIS:</strong>
-                                    &#128218; CAMAREIRO<br>
-                                    &#128218; AGENTE DE TURISMO CORPORATIVO<br>
-                                    &#128218; ORIENTADOR DE HOTELARIA<br>
-                                    &#127880; MONITOR DE LAZER E RECREAÇÃO
+                                    📚 INTELIGÊNCIA ARTIFICIAL<br>
+                                    📦 ASSISTENTE DE LOGÍSTICA<br>
+                                    📱 MARKETING DIGITAL<br>
+                                    📚 CAMAREIRO<br>
+                                    🍳 AUXILIAR DE COZINHA<br>
+                                    🛎️ RECEPCIONISTA<br>
+                                    📚 SOCIAL MEDIA<br>
+                                    📚 AGENTE DE TURISMO<br>
+                                    📚 AGENTE DE TURISMO CORPORATIVO<br>
+                                    📚 TRÁFEGO PAGO<br>
+                                    💅 UX/UI DESIGNER<br>
+                                    📚 ORIENTADOR DE HOTELARIA<br>
+                                    🎈 MONITOR DE LAZER E RECREAÇÃO<br>
+                                    📚 GESTOR DE RESÍDUOS SÓLIDOS<br>
+                                    📚 GOVERNANÇA ESG<br>
+                                    📚 ECO TURISMO E GESTÃO DE UNIDADES<br>
+                                    📚 AGENTE DE DEFESA AMBIENTAL<br>
+                                    📚 OPERADOR DE SISTEMA DE COMPOSTAGEM E RESÍDUOS ORGÂNICOS
                                 </div>
                                 <div class="hero-highlight">
                                     <strong>BENEFÍCIOS</strong>
@@ -888,12 +943,6 @@ TEMPLATE_WIZARD = r'''
 
                         <div class="step-grid step-grid--stacked">
 
-                            <!-- Local: único, exibido como input readonly -->
-                            <div class="form-group full">
-                                <label for="local_display_top">Local *</label>
-                                <input type="text" id="local_display_top" class="readonly-field" readonly value="{{ local_options[0].nome if local_options else '' }}">
-                            </div>
-
                             <!-- Curso -->
                             <div class="form-group full">
                                 <label for="curso_id">Curso *</label>
@@ -904,15 +953,6 @@ TEMPLATE_WIZARD = r'''
                                     {% endfor %}
                                 </select>
                                 <div class="balao-erro" id="curso_id-error" {% if not errors.get('curso_id') %}hidden{% endif %}>{{ errors.get('curso_id', '') }}</div>
-                            </div>
-
-                            <!-- Turma (aparece quando há mais de uma opção para o curso) -->
-                            <div class="form-group full" id="turma-group" style="display:none;">
-                                <label for="opcao_id_select">Turma / Horário *</label>
-                                <select id="opcao_id_select">
-                                    <option value="">Selecione uma turma</option>
-                                </select>
-                                <div class="balao-erro" id="opcao_id-error" hidden></div>
                             </div>
 
                             <!-- Hidden fields -->
@@ -1007,7 +1047,7 @@ TEMPLATE_WIZARD = r'''
                             </div>
 
                             <div class="review-box full">
-                                <div class="review-info-text" style="margin-bottom:10px; color:#2f5fb4; font-size:0.98rem; text-align:left;">
+                                <div class="review-info-text" style="margin-bottom:10px; color:#0d5e57; font-size:0.98rem; text-align:left;">
                                     <strong>Elegibilidade:</strong> Este curso é destinado a pessoas com 16 anos ou mais interessadas em qualificação profissional.
                                 </div>
                                 <label class="review-check" for="confirma_dados">
@@ -1053,11 +1093,10 @@ TEMPLATE_WIZARD = r'''
             var reviewTargets = Array.from(document.querySelectorAll('[data-review]'));
             var benefitsSliders = Array.from(document.querySelectorAll('[data-benefits-slider]'));
 
-            var courseCatalog = {{ course_catalog|tojson }};
             var courseOptions = {{ course_options|tojson }};
-            var localOptions  = {{ local_options|tojson }};
-
             var courseOptionsById = Object.fromEntries(courseOptions.map(function(o){ return [String(o.id), o]; }));
+            var optionByCursoId = {};
+            courseOptions.forEach(function(o){ optionByCursoId[String(o.curso_id)] = o; });
 
             var nomeInput          = document.getElementById('nome');
             var generoInput        = document.getElementById('genero');
@@ -1070,8 +1109,6 @@ TEMPLATE_WIZARD = r'''
             var confirmaDadosInput = document.getElementById('confirma_dados');
 
             var courseSelect      = document.getElementById('curso_id');
-            var opcaoSelectEl     = document.getElementById('opcao_id_select');
-            var turmaGroup        = document.getElementById('turma-group');
             var opcaoIdInput      = document.getElementById('opcao_id');
             var localIdInput      = document.getElementById('local_id');
             var localInput        = document.getElementById('local');
@@ -1085,8 +1122,6 @@ TEMPLATE_WIZARD = r'''
             var enderecoInput     = document.getElementById('endereco_curso');
             var btnCopiarEndereco = document.getElementById('btn-copiar-endereco');
 
-            var unicoLocal = localOptions[0] || null;
-
             function somenteDigitos(v) { return (v || '').replace(/\D/g, ''); }
 
             function setError(fieldId, msg) {
@@ -1099,17 +1134,12 @@ TEMPLATE_WIZARD = r'''
             function aplicarOpcao(opcaoId) {
                 var op = courseOptionsById[String(opcaoId || '')];
                 if (!op) {
-                    opcaoIdInput.value      = '';
-                    localIdInput.value      = unicoLocal ? unicoLocal.id : '';
-                    localInput.value        = unicoLocal ? unicoLocal.nome : '';
-                    if (localDisplay) localDisplay.value = unicoLocal ? unicoLocal.nome : '';
-                    cursoInput.value        = '';
-                    turmaInput.value        = '';
-                    diasAulaInput.value     = '';
-                    horarioInput.value      = '';
-                    dataInicioInput.value   = '';
-                    encerramentoInput.value = '';
-                    enderecoInput.value     = '';
+                    opcaoIdInput.value = ''; localIdInput.value = '';
+                    localInput.value = ''; if (localDisplay) localDisplay.value = '';
+                    cursoInput.value = ''; turmaInput.value = '';
+                    diasAulaInput.value = ''; horarioInput.value = '';
+                    dataInicioInput.value = ''; encerramentoInput.value = '';
+                    enderecoInput.value = '';
                     return;
                 }
                 opcaoIdInput.value      = op.id;
@@ -1124,79 +1154,30 @@ TEMPLATE_WIZARD = r'''
                 encerramentoInput.value = op.encerramento;
                 enderecoInput.value     = op.endereco_curso;
                 setError('curso_id', '');
-                setError('opcao_id', '');
                 syncReview();
             }
 
-            function atualizarTurmasPorCurso(cursoId, selectedOpcaoId) {
-                var turmasDoCurso = courseOptions.filter(function(o){
-                    return String(o.curso_id) === String(cursoId || '');
-                });
-
-                opcaoSelectEl.innerHTML = '';
-
-                if (turmasDoCurso.length === 0) {
-                    turmaGroup.style.display = 'none';
-                    aplicarOpcao('');
-                    return;
-                }
-
-                if (turmasDoCurso.length === 1) {
-                    turmaGroup.style.display = 'none';
-                    aplicarOpcao(turmasDoCurso[0].id);
-                    return;
-                }
-
-                turmaGroup.style.display = '';
-                var placeholder = document.createElement('option');
-                placeholder.value = '';
-                placeholder.textContent = 'Selecione uma turma';
-                opcaoSelectEl.appendChild(placeholder);
-
-                turmasDoCurso.forEach(function(op) {
-                    var opt = document.createElement('option');
-                    opt.value = op.id;
-                    opt.textContent = op.turma_label;
-                    if (String(op.id) === String(selectedOpcaoId || '')) {
-                        opt.selected = true;
-                    }
-                    opcaoSelectEl.appendChild(opt);
-                });
-
-                if (selectedOpcaoId && turmasDoCurso.some(function(o){ return String(o.id) === String(selectedOpcaoId); })) {
-                    aplicarOpcao(selectedOpcaoId);
-                } else {
-                    aplicarOpcao('');
-                }
-            }
-
+            // 1 turma por curso → auto-seleção
             courseSelect.addEventListener('change', function() {
                 setError('curso_id', '');
                 var cursoId = courseSelect.value;
-                if (cursoId) {
-                    atualizarTurmasPorCurso(cursoId, '');
+                if (cursoId && optionByCursoId[cursoId]) {
+                    aplicarOpcao(optionByCursoId[cursoId].id);
                 } else {
-                    turmaGroup.style.display = 'none';
                     aplicarOpcao('');
                 }
                 syncReview();
-            });
-
-            opcaoSelectEl.addEventListener('change', function() {
-                setError('opcao_id', '');
-                aplicarOpcao(opcaoSelectEl.value);
             });
 
             if (btnCopiarEndereco && enderecoInput) {
                 btnCopiarEndereco.addEventListener('click', function() {
                     navigator.clipboard.writeText(enderecoInput.value).then(function(){
-                        btnCopiarEndereco.textContent = 'COPIADO &#10003;';
+                        btnCopiarEndereco.textContent = 'COPIADO ✅';
                     }).catch(function(){
-                        enderecoInput.select();
-                        document.execCommand('copy');
-                        btnCopiarEndereco.textContent = 'COPIADO &#10003;';
+                        enderecoInput.select(); document.execCommand('copy');
+                        btnCopiarEndereco.textContent = 'COPIADO ✅';
                     });
-                    setTimeout(function(){ btnCopiarEndereco.textContent = 'COPIAR &#128203;'; }, 1200);
+                    setTimeout(function(){ btnCopiarEndereco.textContent = 'COPIAR 📋'; }, 1200);
                 });
             }
 
@@ -1210,14 +1191,8 @@ TEMPLATE_WIZARD = r'''
             function syncReview() {
                 reviewTargets.forEach(function(target){
                     var key = target.dataset.review;
-                    if (key === 'curso_nome') {
-                        target.textContent = cursoInput ? cursoInput.value.trim() : '';
-                        return;
-                    }
-                    if (key === 'local_nome') {
-                        target.textContent = localInput ? localInput.value.trim() : '';
-                        return;
-                    }
+                    if (key === 'curso_nome') { target.textContent = cursoInput ? cursoInput.value.trim() : ''; return; }
+                    if (key === 'local_nome') { target.textContent = localInput ? localInput.value.trim() : ''; return; }
                     var field = document.getElementById(key);
                     if (!field) { target.textContent = ''; return; }
                     if (field.tagName === 'SELECT') {
@@ -1230,242 +1205,123 @@ TEMPLATE_WIZARD = r'''
             }
 
             function validarCPF(cpf){
-                var d = somenteDigitos(cpf);
-                if (d.length !== 11 || /^(\d)\1+$/.test(d)) return false;
-                var soma = 0, dig;
-                for (var i = 0; i < 9; i++) soma += Number(d[i]) * (10 - i);
-                dig = (soma * 10) % 11; if (dig === 10) dig = 0;
-                if (dig !== Number(d[9])) return false;
-                soma = 0;
-                for (var i = 0; i < 10; i++) soma += Number(d[i]) * (11 - i);
-                dig = (soma * 10) % 11; if (dig === 10) dig = 0;
-                return dig === Number(d[10]);
+                var d=somenteDigitos(cpf); if(d.length!==11||/^(\d)\1+$/.test(d))return false;
+                var soma=0,dig; for(var i=0;i<9;i++)soma+=Number(d[i])*(10-i);
+                dig=(soma*10)%11;if(dig===10)dig=0;if(dig!==Number(d[9]))return false;
+                soma=0;for(var i=0;i<10;i++)soma+=Number(d[i])*(11-i);
+                dig=(soma*10)%11;if(dig===10)dig=0;return dig===Number(d[10]);
             }
-            function validarEmail(e){
-                return /^[a-zA-Z0-9_.+-]+@((gmail|hotmail|outlook|yahoo)\.(com|com\.br))$/i.test((e || '').trim());
-            }
+            function validarEmail(e){ return /^[a-zA-Z0-9_.+-]+@((gmail|hotmail|outlook|yahoo)\.(com|com\.br))$/i.test((e||'').trim()); }
             function idadePermitida(v){
-                var p = (v || '').split('/');
-                if (p.length !== 3) return false;
-                var dia = Number(p[0]), mes = Number(p[1]) - 1, ano = Number(p[2]);
-                var d = new Date(ano, mes, dia);
-                if (isNaN(d.getTime()) || d.getDate() !== dia || d.getMonth() !== mes || d.getFullYear() !== ano) return false;
-                var hoje = new Date();
-                var idade = hoje.getFullYear() - d.getFullYear();
-                if (hoje.getMonth() - d.getMonth() < 0 || (hoje.getMonth() === d.getMonth() && hoje.getDate() < d.getDate())) idade--;
-                return idade >= 16 && idade <= 90;
+                var p=(v||'').split('/');if(p.length!==3)return false;
+                var dia=Number(p[0]),mes=Number(p[1])-1,ano=Number(p[2]);
+                var d=new Date(ano,mes,dia);
+                if(isNaN(d.getTime())||d.getDate()!==dia||d.getMonth()!==mes||d.getFullYear()!==ano)return false;
+                var hoje=new Date();var idade=hoje.getFullYear()-d.getFullYear();
+                if(hoje.getMonth()-d.getMonth()<0||(hoje.getMonth()===d.getMonth()&&hoje.getDate()<d.getDate()))idade--;
+                return idade>=16&&idade<=90;
             }
             function validarDDD(w){
-                var d = somenteDigitos(w);
-                if (d.length < 11) return false;
+                var d=somenteDigitos(w);if(d.length<11)return false;
                 return ['11','12','13','14','15','16','17','18','19','21','22','24','27','28',
-                        '31','32','33','34','35','37','38','41','42','43','44','45','46','47','48','49',
-                        '51','53','54','55','61','62','63','64','65','66','67','68','69',
-                        '71','73','74','75','77','79','81','82','83','84','85','86','87','88','89',
-                        '91','92','93','94','95','96','97','98','99'].includes(d.slice(0, 2));
+                    '31','32','33','34','35','37','38','41','42','43','44','45','46','47','48','49',
+                    '51','53','54','55','61','62','63','64','65','66','67','68','69',
+                    '71','73','74','75','77','79','81','82','83','84','85','86','87','88','89',
+                    '91','92','93','94','95','96','97','98','99'].includes(d.slice(0,2));
             }
-            function mascCPF(){
-                var v = somenteDigitos(cpfInput.value).slice(0, 11);
-                if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
-                else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
-                else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-                cpfInput.value = v;
-            }
-            function mascNasc(){
-                var v = somenteDigitos(nascimentoInput.value).slice(0, 8);
-                if (v.length > 4) v = v.replace(/(\d{2})(\d{2})(\d{1,4})/, '$1/$2/$3');
-                else if (v.length > 2) v = v.replace(/(\d{2})(\d{1,2})/, '$1/$2');
-                nascimentoInput.value = v;
-            }
-            function mascWpp(){
-                var v = somenteDigitos(whatsappInput.value).slice(0, 11);
-                if (v.length > 6) v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-                else if (v.length > 2) v = v.replace(/(\d{2})(\d{1,5})/, '($1) $2');
-                whatsappInput.value = v;
-            }
-            function mascCep(){
-                var v = somenteDigitos(cepInput.value).slice(0, 8);
-                if (v.length > 5) v = v.replace(/(\d{5})(\d{1,3})/, '$1-$2');
-                cepInput.value = v;
-            }
-            function vNome(){
-                var v = nomeInput.value.trim();
-                if (!v) { setError('nome','Digite seu nome completo.'); return false; }
-                if (v.length > 50) { setError('nome','Máximo 50 caracteres.'); return false; }
-                if (!/^[A-Za-zÀ-ÿ '´`^~.-]+$/.test(v)) { setError('nome','Use apenas letras e sinais permitidos.'); return false; }
-                setError('nome',''); return true;
-            }
-            function vGenero(){
-                if (!generoInput.value) { setError('genero','Selecione o gênero.'); return false; }
-                setError('genero',''); return true;
-            }
-            function vCPF(){
-                if (!validarCPF(cpfInput.value)) { setError('cpf','CPF inválido.'); return false; }
-                setError('cpf',''); return true;
-            }
-            function vNasc(){
-                if (!idadePermitida(nascimentoInput.value)) { setError('nascimento','Idade permitida: 16 a 90 anos.'); return false; }
-                setError('nascimento',''); return true;
-            }
-            function vWpp(){
-                var d = somenteDigitos(whatsappInput.value);
-                if (d.length !== 11 || !/^\(\d{2}\) \d{5}-\d{4}$/.test(whatsappInput.value) || !validarDDD(whatsappInput.value)) {
-                    setError('whatsapp','Informe um WhatsApp com DDD válido do Brasil.'); return false;
-                }
-                setError('whatsapp',''); return true;
-            }
-            function vCep(){
-                if (!/^\d{5}-\d{3}$/.test(cepInput.value.trim())) { setError('cep','CEP inválido. Formato: 00000-000.'); return false; }
-                setError('cep',''); return true;
-            }
-            function vBairro(){
-                var v = bairroInput.value.trim();
-                if (!v) { setError('bairro','Informe o bairro.'); return false; }
-                if (v.length > 40) { setError('bairro','Máximo 40 caracteres.'); return false; }
-                setError('bairro',''); return true;
-            }
-            function vEmail(){
-                if (!validarEmail(emailInput.value)) { setError('email','Digite um e-mail válido (Gmail, Hotmail, Outlook ou Yahoo).'); return false; }
-                setError('email',''); return true;
-            }
+            function mascCPF(){var v=somenteDigitos(cpfInput.value).slice(0,11);if(v.length>9)v=v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/,'$1.$2.$3-$4');else if(v.length>6)v=v.replace(/(\d{3})(\d{3})(\d{1,3})/,'$1.$2.$3');else if(v.length>3)v=v.replace(/(\d{3})(\d{1,3})/,'$1.$2');cpfInput.value=v;}
+            function mascNasc(){var v=somenteDigitos(nascimentoInput.value).slice(0,8);if(v.length>4)v=v.replace(/(\d{2})(\d{2})(\d{1,4})/,'$1/$2/$3');else if(v.length>2)v=v.replace(/(\d{2})(\d{1,2})/,'$1/$2');nascimentoInput.value=v;}
+            function mascWpp(){var v=somenteDigitos(whatsappInput.value).slice(0,11);if(v.length>6)v=v.replace(/(\d{2})(\d{5})(\d{0,4})/,'($1) $2-$3');else if(v.length>2)v=v.replace(/(\d{2})(\d{1,5})/,'($1) $2');whatsappInput.value=v;}
+            function mascCep(){var v=somenteDigitos(cepInput.value).slice(0,8);if(v.length>5)v=v.replace(/(\d{5})(\d{1,3})/,'$1-$2');cepInput.value=v;}
+
+            function vNome(){var v=nomeInput.value.trim();if(!v){setError('nome','Digite seu nome completo.');return false;}if(v.length>50){setError('nome','Máximo 50 caracteres.');return false;}if(!/^[A-Za-zÀ-ÿ '´`^~.-]+$/.test(v)){setError('nome','Use apenas letras e sinais permitidos.');return false;}setError('nome','');return true;}
+            function vGenero(){if(!generoInput.value){setError('genero','Selecione o gênero.');return false;}setError('genero','');return true;}
+            function vCPF(){if(!validarCPF(cpfInput.value)){setError('cpf','CPF inválido.');return false;}setError('cpf','');return true;}
+            function vNasc(){if(!idadePermitida(nascimentoInput.value)){setError('nascimento','Idade permitida: 16 a 90 anos.');return false;}setError('nascimento','');return true;}
+            function vWpp(){var d=somenteDigitos(whatsappInput.value);if(d.length!==11||!/^\(\d{2}\) \d{5}-\d{4}$/.test(whatsappInput.value)||!validarDDD(whatsappInput.value)){setError('whatsapp','Informe um WhatsApp com DDD válido do Brasil.');return false;}setError('whatsapp','');return true;}
+            function vCep(){if(!/^\d{5}-\d{3}$/.test(cepInput.value.trim())){setError('cep','CEP inválido. Formato: 00000-000.');return false;}setError('cep','');return true;}
+            function vBairro(){var v=bairroInput.value.trim();if(!v){setError('bairro','Informe o bairro.');return false;}if(v.length>40){setError('bairro','Máximo 40 caracteres.');return false;}setError('bairro','');return true;}
+            function vEmail(){if(!validarEmail(emailInput.value)){setError('email','Digite um e-mail válido (Gmail, Hotmail, Outlook ou Yahoo).');return false;}setError('email','');return true;}
+
             function validarPassoDados(){
-                var checks = [
-                    { ok: vNome(),   f: nomeInput },
-                    { ok: vGenero(), f: generoInput },
-                    { ok: vCPF(),    f: cpfInput },
-                    { ok: vNasc(),   f: nascimentoInput },
-                    { ok: vWpp(),    f: whatsappInput },
-                    { ok: vCep(),    f: cepInput },
-                    { ok: vBairro(), f: bairroInput },
-                    { ok: vEmail(),  f: emailInput },
-                ];
-                var first = checks.find(function(c){ return !c.ok; });
-                if (first) { first.f.focus(); return false; }
-                return true;
+                var checks=[{ok:vNome(),f:nomeInput},{ok:vGenero(),f:generoInput},{ok:vCPF(),f:cpfInput},{ok:vNasc(),f:nascimentoInput},{ok:vWpp(),f:whatsappInput},{ok:vCep(),f:cepInput},{ok:vBairro(),f:bairroInput},{ok:vEmail(),f:emailInput}];
+                var first=checks.find(function(c){return !c.ok;});if(first){first.f.focus();return false;}return true;
             }
             function validarPassoEscolher(){
-                if (!courseSelect.value) {
-                    setError('curso_id','Selecione um curso.'); courseSelect.focus(); return false;
-                }
-                if (turmaGroup.style.display !== 'none' && !opcaoSelectEl.value) {
-                    setError('opcao_id','Selecione uma turma.'); opcaoSelectEl.focus(); return false;
-                }
-                if (!opcaoIdInput.value) {
-                    setError('curso_id','Não foi possível determinar a turma. Tente novamente.'); return false;
-                }
+                if(!courseSelect.value){setError('curso_id','Selecione um curso.');courseSelect.focus();return false;}
+                if(!opcaoIdInput.value){setError('curso_id','Não foi possível determinar a turma. Tente novamente.');return false;}
                 return true;
             }
             function validarPassoRevisao(){
-                if (!confirmaDadosInput.checked) {
-                    setError('confirma_dados','Confirme os dados para finalizar.'); confirmaDadosInput.focus(); return false;
-                }
-                setError('confirma_dados',''); return true;
+                if(!confirmaDadosInput.checked){setError('confirma_dados','Confirme os dados para finalizar.');confirmaDadosInput.focus();return false;}
+                setError('confirma_dados','');return true;
             }
             async function buscarBairro(){
-                var limpo = somenteDigitos(cepInput.value);
-                if (limpo.length !== 8) return;
-                try {
-                    var res  = await fetch('https://viacep.com.br/ws/' + limpo + '/json/');
-                    var data = await res.json();
-                    if (!data.erro && data.bairro) { bairroInput.value = data.bairro; vBairro(); syncReview(); }
-                } catch (e) { console.error(e); }
+                var limpo=somenteDigitos(cepInput.value);if(limpo.length!==8)return;
+                try{var res=await fetch('https://viacep.com.br/ws/'+limpo+'/json/');var data=await res.json();if(!data.erro&&data.bairro){bairroInput.value=data.bairro;vBairro();syncReview();}}catch(e){console.error(e);}
             }
 
             document.querySelectorAll('[data-next]').forEach(function(btn){
-                btn.addEventListener('click', function(){
-                    var target = btn.dataset.next;
-                    if (target === 'escolher' && !validarPassoDados()) return;
-                    if (target === 'revisao'  && !validarPassoEscolher()) return;
-                    syncReview();
-                    mostrarPasso(target);
+                btn.addEventListener('click',function(){
+                    var target=btn.dataset.next;
+                    if(target==='escolher'&&!validarPassoDados())return;
+                    if(target==='revisao'&&!validarPassoEscolher())return;
+                    syncReview();mostrarPasso(target);
                 });
             });
             document.querySelectorAll('[data-prev]').forEach(function(btn){
-                btn.addEventListener('click', function(){ syncReview(); mostrarPasso(btn.dataset.prev); });
+                btn.addEventListener('click',function(){syncReview();mostrarPasso(btn.dataset.prev);});
             });
-            form.addEventListener('submit', function(e){
-                if (!validarPassoDados()) { e.preventDefault(); mostrarPasso('dados'); return; }
+            form.addEventListener('submit',function(e){
+                if(!validarPassoDados()){e.preventDefault();mostrarPasso('dados');return;}
                 syncReview();
-                if (!validarPassoRevisao()) { e.preventDefault(); mostrarPasso('revisao'); }
+                if(!validarPassoRevisao()){e.preventDefault();mostrarPasso('revisao');}
             });
 
-            nomeInput.addEventListener('blur', vNome);
-            generoInput.addEventListener('change', vGenero);
-            cpfInput.addEventListener('input', function(){
-                mascCPF();
-                if (somenteDigitos(cpfInput.value).length === 11) vCPF(); else setError('cpf','');
-                syncReview();
-            });
-            nascimentoInput.addEventListener('input', function(){ mascNasc(); syncReview(); });
-            nascimentoInput.addEventListener('blur', vNasc);
-            whatsappInput.addEventListener('input', function(){
-                mascWpp();
-                if (somenteDigitos(whatsappInput.value).length >= 10) vWpp(); else setError('whatsapp','');
-                syncReview();
-            });
-            cepInput.addEventListener('input', function(){
-                mascCep(); bairroInput.value = '';
-                if (cepInput.value.length === 9) { vCep(); buscarBairro(); } else setError('cep','');
-                syncReview();
-            });
-            bairroInput.addEventListener('blur', function(){ vBairro(); syncReview(); });
-            emailInput.addEventListener('input', function(){
-                if (emailInput.value.trim()) vEmail(); else setError('email','');
-                syncReview();
-            });
-            confirmaDadosInput.addEventListener('change', function(){
-                if (confirmaDadosInput.checked) setError('confirma_dados','');
-            });
+            nomeInput.addEventListener('blur',vNome);
+            generoInput.addEventListener('change',vGenero);
+            cpfInput.addEventListener('input',function(){mascCPF();if(somenteDigitos(cpfInput.value).length===11)vCPF();else setError('cpf','');syncReview();});
+            nascimentoInput.addEventListener('input',function(){mascNasc();syncReview();});
+            nascimentoInput.addEventListener('blur',vNasc);
+            whatsappInput.addEventListener('input',function(){mascWpp();if(somenteDigitos(whatsappInput.value).length>=10)vWpp();else setError('whatsapp','');syncReview();});
+            cepInput.addEventListener('input',function(){mascCep();bairroInput.value='';if(cepInput.value.length===9){vCep();buscarBairro();}else setError('cep','');syncReview();});
+            bairroInput.addEventListener('blur',function(){vBairro();syncReview();});
+            emailInput.addEventListener('input',function(){if(emailInput.value.trim())vEmail();else setError('email','');syncReview();});
+            confirmaDadosInput.addEventListener('change',function(){if(confirmaDadosInput.checked)setError('confirma_dados','');});
             ['nome','genero','whatsapp','cep','bairro','email','curso_id','como_conheceu'].forEach(function(id){
-                var f = document.getElementById(id);
-                if (f) { f.addEventListener('input', syncReview); f.addEventListener('change', syncReview); }
+                var f=document.getElementById(id);if(f){f.addEventListener('input',syncReview);f.addEventListener('change',syncReview);}
             });
 
-            function initBenefitsSlider(slider) {
-                var slides   = Array.from(slider.querySelectorAll('.benefit-slide'));
-                var dotsHost = slider.querySelector('[data-benefits-dots]');
-                var prevBtn  = slider.querySelector('[data-benefits-prev]');
-                var nextBtn  = slider.querySelector('[data-benefits-next]');
-                if (!slides.length || !dotsHost || !prevBtn || !nextBtn) return;
-                var cur = Math.max(slides.findIndex(function(s){ return s.classList.contains('ativo'); }), 0);
+            function initBenefitsSlider(slider){
+                var slides=Array.from(slider.querySelectorAll('.benefit-slide'));
+                var dotsHost=slider.querySelector('[data-benefits-dots]');
+                var prevBtn=slider.querySelector('[data-benefits-prev]');
+                var nextBtn=slider.querySelector('[data-benefits-next]');
+                if(!slides.length||!dotsHost||!prevBtn||!nextBtn)return;
+                var cur=Math.max(slides.findIndex(function(s){return s.classList.contains('ativo');}),0);
                 var timer;
-                var dots = slides.map(function(_, i){
-                    var dot = document.createElement('button');
-                    dot.type = 'button'; dot.className = 'benefits-dot';
-                    dot.setAttribute('aria-label', 'Benefício ' + (i+1));
-                    dot.addEventListener('click', function(){ show(i); restart(); });
-                    dotsHost.appendChild(dot); return dot;
+                var dots=slides.map(function(_,i){
+                    var dot=document.createElement('button');dot.type='button';dot.className='benefits-dot';
+                    dot.setAttribute('aria-label','Benefício '+(i+1));
+                    dot.addEventListener('click',function(){show(i);restart();});
+                    dotsHost.appendChild(dot);return dot;
                 });
-                function show(i) {
-                    cur = (i + slides.length) % slides.length;
-                    slides.forEach(function(s, j){ s.classList.toggle('ativo', j === cur); });
-                    dots.forEach(function(d, j){ d.classList.toggle('ativo', j === cur); });
-                }
-                function restart() {
-                    clearInterval(timer);
-                    timer = setInterval(function(){ show(cur + 1); }, 3200);
-                }
-                prevBtn.addEventListener('click', function(){ show(cur - 1); restart(); });
-                nextBtn.addEventListener('click', function(){ show(cur + 1); restart(); });
-                slider.addEventListener('mouseenter', function(){ clearInterval(timer); });
-                slider.addEventListener('mouseleave', restart);
-                show(cur); restart();
+                function show(i){cur=(i+slides.length)%slides.length;slides.forEach(function(s,j){s.classList.toggle('ativo',j===cur);});dots.forEach(function(d,j){d.classList.toggle('ativo',j===cur);});}
+                function restart(){clearInterval(timer);timer=setInterval(function(){show(cur+1);},3200);}
+                prevBtn.addEventListener('click',function(){show(cur-1);restart();});
+                nextBtn.addEventListener('click',function(){show(cur+1);restart();});
+                slider.addEventListener('mouseenter',function(){clearInterval(timer);});
+                slider.addEventListener('mouseleave',restart);
+                show(cur);restart();
             }
 
             var initCursoId = '{{ form_data.get("curso_id", "") }}';
             var initOpcaoId = '{{ form_data.get("opcao_id", "") }}';
 
-            if (unicoLocal) {
-                localIdInput.value  = unicoLocal.id;
-                localInput.value    = unicoLocal.nome;
-                if (localDisplay) localDisplay.value = unicoLocal.nome;
-            }
-
             if (initCursoId) {
                 courseSelect.value = initCursoId;
-                atualizarTurmasPorCurso(initCursoId, initOpcaoId);
-            } else {
-                turmaGroup.style.display = 'none';
+                var op = initOpcaoId ? courseOptionsById[initOpcaoId] : optionByCursoId[initCursoId];
+                if (op) aplicarOpcao(op.id);
             }
 
             benefitsSliders.forEach(initBenefitsSlider);
@@ -1483,7 +1339,7 @@ TEMPLATE_CONFIRMACAO = r'''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>MOVIMENTA RIO</title>
+    <title>MOVIMENTA RIO — GUADALUPE</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/assistant.css">
     <link href="https://fonts.googleapis.com/css2?family=Wise:wght@400;700;900&display=swap" rel="stylesheet">
@@ -1500,96 +1356,44 @@ TEMPLATE_CONFIRMACAO = r'''
         fbq('track', 'PageView');
     </script>
     <style>
-        :root {
-            --cor-principal: #1155cc;
-            --cor-clara: #eef4ff;
-            --cor-texto: #17386d;
-            --sombra-card: 0 18px 55px rgba(17, 85, 204, 0.18);
-        }
-        body {
-            min-height: 100vh; margin: 0;
-            background:
-                radial-gradient(circle at top left, rgba(17,85,204,0.15), transparent 32%),
-                linear-gradient(140deg, #f5f9ff 0%, #fff 55%, #dfeaff 100%);
-            font-family: 'Wise', Arial, sans-serif;
-        }
-        .main-header { border-bottom: 4px solid #1155cc; background: rgba(255,255,255,0.92); }
-        .confirm-page {
-            width: min(680px, calc(100% - 16px));
-            margin: 0 auto; padding: 10px 0 20px; text-align: center;
-        }
-        .wizard-progress {
-            margin: 12px auto 16px; padding: 14px 14px 16px;
-            border-radius: 28px; background: rgba(255,255,255,0.9);
-            box-shadow: 0 12px 30px rgba(17,85,204,0.12);
-        }
-        .wizard-track {
-            width: 100%; height: 14px; border-radius: 999px;
-            background: #dbe6fb; overflow: hidden;
-        }
-        .wizard-fill {
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg,#1155cc 0%,#4f86ea 100%);
-            border-radius: 999px;
-        }
-        .wizard-labels {
-            display: grid; grid-template-columns: repeat(4,1fr);
-            gap: 8px; margin-top: 12px;
-        }
-        .wizard-label {
-            padding: 10px 8px; border: 1px solid #c9daf8; border-radius: 16px;
-            background: #fff; color: #2f5fb4; font-size: 0.84rem;
-            font-weight: 700; text-align: center;
-        }
-        .wizard-label.ativo { border-color: var(--cor-principal); background: var(--cor-clara); color: var(--cor-principal); }
-        .confirm-shell {
-            background: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.9);
-            border-radius: 30px; box-shadow: var(--sombra-card); overflow: hidden; text-align: center;
-        }
-        .confirm-card {
-            padding: 20px 16px 18px; background: transparent;
-            text-align: center; max-width: 620px; margin: 0 auto;
-        }
-        .checkmark { width: 120px; height: 120px; margin: 0 auto 12px; }
-        .checkmark svg { width: 100%; height: 100%; stroke: #1155cc; fill: none; }
-        .confirm-card h1 { margin: 0 0 10px; color: #1155cc; font-size: clamp(1.8rem,4vw,2.6rem); letter-spacing: -0.04em; }
-        .protocol-box {
-            margin: 16px auto 12px; padding: 14px; max-width: 320px;
-            border-radius: 16px; background: #eef4ff; border: 2px solid #1155cc;
-        }
-        .protocol-box strong { display: block; color: #1155cc; font-size: 0.98rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.04em; }
-        .protocol-box span { display: block; color: #1155cc; font-size: 1.35rem; font-weight: 900; letter-spacing: 0.08em; word-break: break-all; }
-        .next-steps {
-            margin: 16px auto 0; max-width: 460px; padding: 14px;
-            border-radius: 18px; background: #fff; border: 1px solid #d7e3fb;
-        }
-        .next-steps h2 { margin: 0 0 12px; color: #1155cc; font-size: 1.2rem; }
-        .next-steps ol { margin: 0; padding-left: 22px; color: #2f5fb4; line-height: 1.55; list-style-position: inside; }
-        .actions { display: grid; gap: 10px; margin-top: 16px; max-width: 380px; margin-left: auto; margin-right: auto; }
-        .action-button {
-            display: flex; align-items: center; justify-content: center;
-            min-height: 42px; padding: 10px 14px; border-radius: 12px;
-            text-decoration: none; text-transform: uppercase;
-            font-weight: 800; letter-spacing: 0.03em;
-            transition: transform 0.16s ease;
-        }
-        .action-button.primary { background: linear-gradient(90deg,#1155cc 0%,#4f86ea 100%); color: #fff; box-shadow: 0 10px 24px rgba(17,85,204,0.24); }
-        .action-button.secondary { background: #fff; color: #1155cc; border: 2px solid #1155cc; }
-        .action-button:hover { transform: translateY(-1px); }
-        @media (max-width: 640px) {
-            html,body { width:100%!important; max-width:100%!important; overflow-x:hidden!important; }
-            body * { min-width:0; }
-            .main-header { padding: 10px 12px; }
-            .header-logos { display:flex; flex-direction:column; align-items:center; gap:10px; }
-            .header-logos img { max-width: min(88vw,280px); height:auto; }
-            .confirm-page { width:calc(100% - 8px)!important; max-width:100%!important; padding:6px 0 12px; }
-            .confirm-card { width:100%!important; max-width:100%!important; padding:14px 10px 12px; }
-            .wizard-progress { width:100%!important; max-width:100%!important; padding:10px; border-radius:18px; }
-            .wizard-labels { grid-template-columns:1fr; gap:6px; }
-            .confirm-shell { width:100%!important; max-width:100%!important; border-radius:18px; }
-            .protocol-box span { font-size:1.3rem; }
-            .next-steps,.actions,.action-button,.protocol-box,.wizard-label,.wizard-track { width:100%!important; max-width:100%!important; }
-            img,svg { max-width:100%!important; height:auto!important; }
+        :root { --cor-principal:#0f766e; --cor-clara:#f0fdfa; --cor-texto:#134e4a; --sombra-card:0 18px 55px rgba(15,118,110,0.18); }
+        body { min-height:100vh; margin:0; background: radial-gradient(circle at top left,rgba(15,118,110,0.15),transparent 32%), linear-gradient(140deg,#f0fdfa 0%,#fff 55%,#ccfbf1 100%); font-family:'Wise',Arial,sans-serif; }
+        .main-header { border-bottom:4px solid #0f766e; background:rgba(255,255,255,0.92); }
+        .confirm-page { width:min(680px,calc(100% - 16px)); margin:0 auto; padding:10px 0 20px; text-align:center; }
+        .wizard-progress { margin:12px auto 16px; padding:14px 14px 16px; border-radius:28px; background:rgba(255,255,255,0.9); box-shadow:0 12px 30px rgba(15,118,110,0.12); }
+        .wizard-track { width:100%; height:14px; border-radius:999px; background:#ccfbf1; overflow:hidden; }
+        .wizard-fill { width:100%; height:100%; background:linear-gradient(90deg,#0f766e 0%,#2dd4bf 100%); border-radius:999px; }
+        .wizard-labels { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:12px; }
+        .wizard-label { padding:10px 8px; border:1px solid #99d6cf; border-radius:16px; background:#fff; color:#0d5e57; font-size:0.84rem; font-weight:700; text-align:center; }
+        .wizard-label.ativo { border-color:#0f766e; background:#f0fdfa; color:#0f766e; }
+        .confirm-shell { background:rgba(255,255,255,0.88); border:1px solid rgba(255,255,255,0.9); border-radius:30px; box-shadow:var(--sombra-card); overflow:hidden; text-align:center; }
+        .confirm-card { padding:20px 16px 18px; background:transparent; text-align:center; max-width:620px; margin:0 auto; }
+        .checkmark { width:120px; height:120px; margin:0 auto 12px; }
+        .checkmark svg { width:100%; height:100%; stroke:#0f766e; fill:none; }
+        .confirm-card h1 { margin:0 0 10px; color:#0f766e; font-size:clamp(1.8rem,4vw,2.6rem); letter-spacing:-0.04em; }
+        .protocol-box { margin:16px auto 12px; padding:14px; max-width:320px; border-radius:16px; background:#f0fdfa; border:2px solid #0f766e; }
+        .protocol-box strong { display:block; color:#0f766e; font-size:0.98rem; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.04em; }
+        .protocol-box span { display:block; color:#0f766e; font-size:1.35rem; font-weight:900; letter-spacing:0.08em; word-break:break-all; }
+        .next-steps { margin:16px auto 0; max-width:460px; padding:14px; border-radius:18px; background:#fff; border:1px solid #a7f3d0; }
+        .next-steps h2 { margin:0 0 12px; color:#0f766e; font-size:1.2rem; }
+        .next-steps ol { margin:0; padding-left:22px; color:#0d5e57; line-height:1.55; list-style-position:inside; }
+        .actions { display:grid; gap:10px; margin-top:16px; max-width:380px; margin-left:auto; margin-right:auto; }
+        .action-button { display:flex; align-items:center; justify-content:center; min-height:42px; padding:10px 14px; border-radius:12px; text-decoration:none; text-transform:uppercase; font-weight:800; letter-spacing:0.03em; transition:transform 0.16s ease; }
+        .action-button.primary { background:linear-gradient(90deg,#0f766e 0%,#2dd4bf 100%); color:#fff; box-shadow:0 10px 24px rgba(15,118,110,0.24); }
+        .action-button.secondary { background:#fff; color:#0f766e; border:2px solid #0f766e; }
+        .action-button:hover { transform:translateY(-1px); }
+        @media (max-width:640px) {
+            html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}body*{min-width:0;}
+            .main-header{padding:10px 12px;}.header-logos{display:flex;flex-direction:column;align-items:center;gap:10px;}
+            .header-logos img{max-width:min(88vw,280px);height:auto;}
+            .confirm-page{width:calc(100% - 8px)!important;max-width:100%!important;padding:6px 0 12px;}
+            .confirm-card{width:100%!important;max-width:100%!important;padding:14px 10px 12px;}
+            .wizard-progress{width:100%!important;max-width:100%!important;padding:10px;border-radius:18px;}
+            .wizard-labels{grid-template-columns:1fr;gap:6px;}
+            .confirm-shell{width:100%!important;max-width:100%!important;border-radius:18px;}
+            .protocol-box span{font-size:1.3rem;}
+            .next-steps,.actions,.action-button,.protocol-box,.wizard-label,.wizard-track{width:100%!important;max-width:100%!important;}
+            img,svg{max-width:100%!important;height:auto!important;}
         }
     </style>
 </head>
@@ -1602,7 +1406,6 @@ TEMPLATE_CONFIRMACAO = r'''
             <img src="/static/logo-prefeitura.png" alt="Prefeitura do Rio" class="logo-prefeitura-topo">
         </div>
     </header>
-
     <div class="confirm-page">
         <div class="wizard-progress">
             <div class="wizard-track"><div class="wizard-fill"></div></div>
@@ -1613,7 +1416,6 @@ TEMPLATE_CONFIRMACAO = r'''
                 <div class="wizard-label ativo">4. Confirmação</div>
             </div>
         </div>
-
         <div class="confirm-shell">
             <div class="confirm-card">
                 <div class="checkmark">
@@ -1648,7 +1450,7 @@ TEMPLATE_CONFIRMACAO = r'''
 '''
 
 # =============================================================================
-# 10. APLICAÇÃO FLASK
+# 7. APLICAÇÃO FLASK
 # =============================================================================
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "chave-secreta-para-sessao")
@@ -1714,7 +1516,7 @@ def validate_form_data(form_data):
     if not selected_curso:
         errors["curso_id"] = "Selecione um curso."
     if not selected_option:
-        errors["curso_id"] = errors.get("curso_id", "Selecione um horário para o curso.")
+        errors["curso_id"] = errors.get("curso_id", "Selecione um curso válido.")
     elif selected_option and selected_curso and selected_option["curso_id"] != selected_curso:
         errors["curso_id"] = "A turma não pertence ao curso escolhido."
 
@@ -1829,7 +1631,7 @@ def confirmacao():
     )
 
 # =============================================================================
-# 11. SUPABASE
+# 8. SUPABASE
 # =============================================================================
 SUPABASE_FUNCTION_URL = os.environ.get(
     "SUPABASE_FUNCTION_URL",
@@ -1873,3 +1675,4 @@ def send_registration_to_supabase(form_data):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+    
