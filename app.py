@@ -343,12 +343,12 @@ TEMPLATE_WIZARD = r'''
     </script>
     <style>
         :root {
-            --cor-principal:        #0f766e;
-            --cor-principal-escura: #0d5e57;
-            --cor-clara:            #f0fdfa;
-            --cor-texto:            #134e4a;
-            --cor-borda:            #99d6cf;
-            --sombra-card:          0 18px 55px rgba(15,118,110,0.18);
+            --cor-principal:        #2563eb;
+            --cor-principal-escura: #1d4ed8;
+            --cor-clara:            #eff6ff;
+            --cor-texto:            #1e3a5f;
+            --cor-borda:            #93c5fd;
+            --sombra-card:          0 18px 55px rgba(37,99,235,0.18);
         }
 
         * { box-sizing: border-box; }
@@ -357,9 +357,9 @@ TEMPLATE_WIZARD = r'''
         body {
             min-height: 100vh;
             background:
-                radial-gradient(circle at top left, rgba(15,118,110,0.14), transparent 34%),
-                radial-gradient(circle at top right, rgba(153,214,207,0.82), transparent 32%),
-                linear-gradient(135deg, #f0fdfa 0%, #fff 42%, #ccfbf1 100%);
+                radial-gradient(circle at top left, rgba(37,99,235,0.14), transparent 34%),
+                radial-gradient(circle at top right, rgba(147,197,253,0.82), transparent 32%),
+                linear-gradient(135deg, #eff6ff 0%, #fff 42%, #dbeafe 100%);
             color: var(--cor-texto);
             font-family: 'Wise', Arial, sans-serif;
         }
@@ -382,17 +382,17 @@ TEMPLATE_WIZARD = r'''
             padding: 18px 18px 20px;
             border-radius: 28px;
             background: rgba(255,255,255,0.9);
-            box-shadow: 0 12px 30px rgba(15,118,110,0.12);
+            box-shadow: 0 12px 30px rgba(37,99,235,0.12);
         }
 
         .wizard-track {
             width: 100%; height: 14px;
-            background: #ccfbf1; border-radius: 999px; overflow: hidden;
+            background: #dbeafe; border-radius: 999px; overflow: hidden;
         }
 
         .wizard-fill {
             height: 100%; width: 25%;
-            background: linear-gradient(90deg, #0f766e 0%, #2dd4bf 100%);
+            background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
             border-radius: 999px;
             transition: width 0.3s ease;
         }
@@ -405,8 +405,8 @@ TEMPLATE_WIZARD = r'''
 
         .wizard-label {
             padding: 12px 10px;
-            border: 1px solid #99d6cf; border-radius: 18px;
-            background: #fff; color: #0d5e57;
+            border: 1px solid #93c5fd; border-radius: 18px;
+            background: #fff; color: #1d4ed8;
             font-size: 0.92rem; font-weight: 700;
             text-align: center;
             transition: all 0.25s ease;
@@ -441,8 +441,8 @@ TEMPLATE_WIZARD = r'''
 
         .hero-card {
             padding: 32px; border-radius: 30px;
-            background: linear-gradient(135deg, #fff 0%, #f0fdfa 58%, #ccfbf1 100%);
-            border: 1px solid #99d6cf; width: 100%; text-align: center;
+            background: linear-gradient(135deg, #fff 0%, #eff6ff 58%, #dbeafe 100%);
+            border: 1px solid #93c5fd; width: 100%; text-align: center;
         }
 
         .hero-pill {
@@ -462,7 +462,7 @@ TEMPLATE_WIZARD = r'''
         .panel-title { font-size: clamp(1.7rem, 3vw, 2.4rem); }
 
         .hero-subtitle, .panel-subtitle {
-            margin: 0; color: #0d5e57;
+            margin: 0; color: #1d4ed8;
             font-size: 1.05rem; line-height: 1.55;
         }
 
@@ -470,13 +470,13 @@ TEMPLATE_WIZARD = r'''
 
         .hero-highlight, .info-card, .review-box, .step-card {
             border-radius: 22px;
-            border: 1px solid #a7f3d0;
+            border: 1px solid #bfdbfe;
             background: #fff;
-            box-shadow: 0 8px 24px rgba(15,118,110,0.08);
+            box-shadow: 0 8px 24px rgba(37,99,235,0.08);
         }
 
         .hero-highlight {
-            padding: 12px 14px; color: #0d5e57;
+            padding: 12px 14px; color: #1d4ed8;
             font-size: 0.95rem; font-weight: 700;
         }
 
@@ -514,7 +514,7 @@ TEMPLATE_WIZARD = r'''
         .benefits-nav {
             min-width: 44px; min-height: 44px; border: none; border-radius: 999px;
             background: #fff; color: var(--cor-principal);
-            box-shadow: 0 6px 16px rgba(15,118,110,0.14);
+            box-shadow: 0 6px 16px rgba(37,99,235,0.14);
             font: inherit; font-size: 1.1rem; font-weight: 900; cursor: pointer;
         }
 
@@ -523,7 +523,7 @@ TEMPLATE_WIZARD = r'''
         }
 
         .benefits-dot {
-            width: 9px; height: 9px; border-radius: 999px; background: #99d6cf;
+            width: 9px; height: 9px; border-radius: 999px; background: #93c5fd;
             transition: transform 0.2s ease, background 0.2s ease;
         }
 
@@ -582,14 +582,14 @@ TEMPLATE_WIZARD = r'''
             min-height: 38px; height: 38px;
             padding: 7px 10px;
             border: 1.2px solid var(--cor-borda); border-radius: 10px;
-            background: #f0fdfa; color: var(--cor-texto);
+            background: #eff6ff; color: var(--cor-texto);
             font: inherit; line-height: 1.2; text-align: left; outline: none;
             transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
 
         .form-group select {
             appearance: none; -webkit-appearance: none; -moz-appearance: none;
-            background-image: url('data:image/svg+xml;utf8,<svg fill="%230f766e" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%232563eb" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
             background-repeat: no-repeat;
             background-position: right 14px center;
             background-size: 20px 20px;
@@ -603,12 +603,12 @@ TEMPLATE_WIZARD = r'''
         .form-group textarea:focus {
             border-color: var(--cor-principal);
             background: #fff;
-            box-shadow: 0 0 0 4px rgba(15,118,110,0.12);
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
         }
 
         .readonly-field {
-            background: #f0fdfa !important;
-            color: #0d5e57 !important;
+            background: #eff6ff !important;
+            color: #1d4ed8 !important;
             font-weight: 700;
         }
 
@@ -629,7 +629,7 @@ TEMPLATE_WIZARD = r'''
         .icon-button {
             min-width: 56px; min-height: 52px;
             background: var(--cor-principal); color: #fff;
-            box-shadow: 0 8px 16px rgba(15,118,110,0.22);
+            box-shadow: 0 8px 16px rgba(37,99,235,0.22);
         }
 
         .wizard-panel[data-step="escolher"] .icon-button {
@@ -648,8 +648,8 @@ TEMPLATE_WIZARD = r'''
         }
 
         .cta-button, .submit-button {
-            background: linear-gradient(90deg, #0f766e 0%, #2dd4bf 100%);
-            color: #fff; box-shadow: 0 10px 24px rgba(15,118,110,0.24);
+            background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+            color: #fff; box-shadow: 0 10px 24px rgba(37,99,235,0.24);
         }
 
         .secondary-button {
@@ -677,7 +677,7 @@ TEMPLATE_WIZARD = r'''
         .balao-erro {
             margin-top: 4px; padding: 10px 14px;
             border-radius: 14px;
-            border: 1px solid #0d5e57; background: #0f766e;
+            border: 1px solid #1d4ed8; background: #2563eb;
             color: #fff; font-size: 0.92rem;
             font-weight: 700; line-height: 1.35;
         }
@@ -685,8 +685,8 @@ TEMPLATE_WIZARD = r'''
         .balao-erro[hidden] { display: none; }
 
         .erro-campo {
-            border-color: #0f766e !important;
-            box-shadow: 0 0 0 4px rgba(15,118,110,0.12) !important;
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.12) !important;
         }
 
         .review-layout {
@@ -723,7 +723,7 @@ TEMPLATE_WIZARD = r'''
             display: flex; gap: 12px;
             align-items: flex-start; justify-content: flex-start;
             padding: 10px 12px; border-radius: 14px;
-            background: var(--cor-clara); color: #134e4a;
+            background: var(--cor-clara); color: #1e3a5f;
             line-height: 1.45; text-align: left;
         }
 
@@ -1047,7 +1047,7 @@ TEMPLATE_WIZARD = r'''
                             </div>
 
                             <div class="review-box full">
-                                <div class="review-info-text" style="margin-bottom:10px; color:#0d5e57; font-size:0.98rem; text-align:left;">
+                                <div class="review-info-text" style="margin-bottom:10px; color:#1d4ed8; font-size:0.98rem; text-align:left;">
                                     <strong>Elegibilidade:</strong> Este curso é destinado a pessoas com 16 anos ou mais interessadas em qualificação profissional.
                                 </div>
                                 <label class="review-check" for="confirma_dados">
@@ -1356,31 +1356,31 @@ TEMPLATE_CONFIRMACAO = r'''
         fbq('track', 'PageView');
     </script>
     <style>
-        :root { --cor-principal:#0f766e; --cor-clara:#f0fdfa; --cor-texto:#134e4a; --sombra-card:0 18px 55px rgba(15,118,110,0.18); }
-        body { min-height:100vh; margin:0; background: radial-gradient(circle at top left,rgba(15,118,110,0.15),transparent 32%), linear-gradient(140deg,#f0fdfa 0%,#fff 55%,#ccfbf1 100%); font-family:'Wise',Arial,sans-serif; }
-        .main-header { border-bottom:4px solid #0f766e; background:rgba(255,255,255,0.92); }
+        :root { --cor-principal:#2563eb; --cor-clara:#eff6ff; --cor-texto:#1e3a5f; --sombra-card:0 18px 55px rgba(37,99,235,0.18); }
+        body { min-height:100vh; margin:0; background: radial-gradient(circle at top left,rgba(37,99,235,0.15),transparent 32%), linear-gradient(140deg,#eff6ff 0%,#fff 55%,#dbeafe 100%); font-family:'Wise',Arial,sans-serif; }
+        .main-header { border-bottom:4px solid #2563eb; background:rgba(255,255,255,0.92); }
         .confirm-page { width:min(680px,calc(100% - 16px)); margin:0 auto; padding:10px 0 20px; text-align:center; }
-        .wizard-progress { margin:12px auto 16px; padding:14px 14px 16px; border-radius:28px; background:rgba(255,255,255,0.9); box-shadow:0 12px 30px rgba(15,118,110,0.12); }
-        .wizard-track { width:100%; height:14px; border-radius:999px; background:#ccfbf1; overflow:hidden; }
-        .wizard-fill { width:100%; height:100%; background:linear-gradient(90deg,#0f766e 0%,#2dd4bf 100%); border-radius:999px; }
+        .wizard-progress { margin:12px auto 16px; padding:14px 14px 16px; border-radius:28px; background:rgba(255,255,255,0.9); box-shadow:0 12px 30px rgba(37,99,235,0.12); }
+        .wizard-track { width:100%; height:14px; border-radius:999px; background:#dbeafe; overflow:hidden; }
+        .wizard-fill { width:100%; height:100%; background:linear-gradient(90deg,#2563eb 0%,#60a5fa 100%); border-radius:999px; }
         .wizard-labels { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:12px; }
-        .wizard-label { padding:10px 8px; border:1px solid #99d6cf; border-radius:16px; background:#fff; color:#0d5e57; font-size:0.84rem; font-weight:700; text-align:center; }
-        .wizard-label.ativo { border-color:#0f766e; background:#f0fdfa; color:#0f766e; }
+        .wizard-label { padding:10px 8px; border:1px solid #93c5fd; border-radius:16px; background:#fff; color:#1d4ed8; font-size:0.84rem; font-weight:700; text-align:center; }
+        .wizard-label.ativo { border-color:#2563eb; background:#eff6ff; color:#2563eb; }
         .confirm-shell { background:rgba(255,255,255,0.88); border:1px solid rgba(255,255,255,0.9); border-radius:30px; box-shadow:var(--sombra-card); overflow:hidden; text-align:center; }
         .confirm-card { padding:20px 16px 18px; background:transparent; text-align:center; max-width:620px; margin:0 auto; }
         .checkmark { width:120px; height:120px; margin:0 auto 12px; }
-        .checkmark svg { width:100%; height:100%; stroke:#0f766e; fill:none; }
-        .confirm-card h1 { margin:0 0 10px; color:#0f766e; font-size:clamp(1.8rem,4vw,2.6rem); letter-spacing:-0.04em; }
-        .protocol-box { margin:16px auto 12px; padding:14px; max-width:320px; border-radius:16px; background:#f0fdfa; border:2px solid #0f766e; }
-        .protocol-box strong { display:block; color:#0f766e; font-size:0.98rem; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.04em; }
-        .protocol-box span { display:block; color:#0f766e; font-size:1.35rem; font-weight:900; letter-spacing:0.08em; word-break:break-all; }
-        .next-steps { margin:16px auto 0; max-width:460px; padding:14px; border-radius:18px; background:#fff; border:1px solid #a7f3d0; }
-        .next-steps h2 { margin:0 0 12px; color:#0f766e; font-size:1.2rem; }
-        .next-steps ol { margin:0; padding-left:22px; color:#0d5e57; line-height:1.55; list-style-position:inside; }
+        .checkmark svg { width:100%; height:100%; stroke:#2563eb; fill:none; }
+        .confirm-card h1 { margin:0 0 10px; color:#2563eb; font-size:clamp(1.8rem,4vw,2.6rem); letter-spacing:-0.04em; }
+        .protocol-box { margin:16px auto 12px; padding:14px; max-width:320px; border-radius:16px; background:#eff6ff; border:2px solid #2563eb; }
+        .protocol-box strong { display:block; color:#2563eb; font-size:0.98rem; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.04em; }
+        .protocol-box span { display:block; color:#2563eb; font-size:1.35rem; font-weight:900; letter-spacing:0.08em; word-break:break-all; }
+        .next-steps { margin:16px auto 0; max-width:460px; padding:14px; border-radius:18px; background:#fff; border:1px solid #bfdbfe; }
+        .next-steps h2 { margin:0 0 12px; color:#2563eb; font-size:1.2rem; }
+        .next-steps ol { margin:0; padding-left:22px; color:#1d4ed8; line-height:1.55; list-style-position:inside; }
         .actions { display:grid; gap:10px; margin-top:16px; max-width:380px; margin-left:auto; margin-right:auto; }
         .action-button { display:flex; align-items:center; justify-content:center; min-height:42px; padding:10px 14px; border-radius:12px; text-decoration:none; text-transform:uppercase; font-weight:800; letter-spacing:0.03em; transition:transform 0.16s ease; }
-        .action-button.primary { background:linear-gradient(90deg,#0f766e 0%,#2dd4bf 100%); color:#fff; box-shadow:0 10px 24px rgba(15,118,110,0.24); }
-        .action-button.secondary { background:#fff; color:#0f766e; border:2px solid #0f766e; }
+        .action-button.primary { background:linear-gradient(90deg,#2563eb 0%,#60a5fa 100%); color:#fff; box-shadow:0 10px 24px rgba(37,99,235,0.24); }
+        .action-button.secondary { background:#fff; color:#2563eb; border:2px solid #2563eb; }
         .action-button:hover { transform:translateY(-1px); }
         @media (max-width:640px) {
             html,body{width:100%!important;max-width:100%!important;overflow-x:hidden!important;}body*{min-width:0;}
@@ -1675,4 +1675,3 @@ def send_registration_to_supabase(form_data):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-    
