@@ -49,7 +49,7 @@ COURSE_CATALOG = [
     {"id": "6",  "nome": "RECEPCIONISTA"},
     {"id": "7",  "nome": "SOCIAL MEDIA"},
     {"id": "8",  "nome": "AUXILIAR ADMINISTRATIVO"},
-    {"id": "9",  "nome": "AGENTE DE TURISMO CORPORATIVO"},
+    {"id": "9",  "nome": "AUXILIAR ADMINISTRATIVO"},
     {"id": "10", "nome": "TRÁFEGO PAGO"},
     {"id": "11", "nome": "UX/UI DESIGNER"},
     {"id": "12", "nome": "ORIENTADOR DE HOTELARIA"},
